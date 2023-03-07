@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "django-secret-key-generator"
+version = "0.1.0"
+description = "Simple random string generator, originally designed to generate a SECRET_KEY value for Django settings,"
+authors = ["David Nugent <davidn@uniquode.io>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "django_secret_key_generator"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+[tool.poetry.scripts]
+django-secret-key-generator = "django-secret-key-generator:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
